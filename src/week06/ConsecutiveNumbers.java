@@ -1,4 +1,5 @@
 package week06;
+
 /*
 2. Create a class named ConsecutiveNumbers and implement
 a function with the following specifications:
@@ -56,7 +57,7 @@ a function with the following specifications:
                     AlphaBetaGamma
                     31
 
-                    1. create function that print all the previouse numbers with each number on seperate line
+                    1. create function that print all the previous numbers with each number on separate line
                     2. for loop
                     3. num % 2 && num % 3 && num % 5 all equal to 0 num = AlphaBetaGamma
                     4. num % 2 num % 3 ==>
@@ -64,4 +65,38 @@ a function with the following specifications:
                     5. num % 3 == 0 replace num =
  */
 public class ConsecutiveNumbers {
+    public static void main(String[] args) {
+
+        int n = 31;
+
+        for (int i = 1; i <= n; i++) {
+            String temp = "";
+
+
+            if (i % 2 != 0 && i % 3 != 0 && i % 5 != 0) {
+                System.out.println(i);
+            } else {
+
+                if (i % 2 == 0) {
+                    temp += "Alpha";
+                }
+
+                if (i % 3 == 0) {
+                    temp += "Beta";
+                }
+
+                if (i % 5 == 0) {
+                    temp += "Gamma";
+                }
+
+                System.out.println(temp);
+
+            }
+        }
+    }
 }
+
+
+
+
+
