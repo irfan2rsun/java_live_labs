@@ -1,0 +1,52 @@
+Week8 tasks: Class and Object
+             Custom Class
+             Method
+             Scanner
+
+
+1. Create a custom class named Carpet with the following specifications:
+
+    Attributes:
+        width
+        length
+        unitPrice
+        isPersian
+
+    Actions:
+        calcCost(): Calculates and returns the total price of the carpet.
+
+        The formula to calculate the price of the carpet is as follows:
+                Total price of carpet = (width * length) * unitPrice
+                If the carpet is a Persian carpet, add $200 to the totalPrice.
+
+        toString(): Returns a string representation of the carpet object with full information, including the total cost calculated by calcCost().
+
+
+
+   Create another class named CarpetClients, create multiple carpet objects, and test the function of each carpet object.
+
+2. Create a java class hotel which will allow you to check into a hotel.
+When checking in some information will be gathered and used to determine the information about the room and price
+
+      Go through the following flow:
+
+          Welcome to the Java Hotel //sout
+          How many days will you stay //sout
+          -> read number of days from console  //Scanner nextInt();
+          How many people are in your party //sout
+          -> read number of people from console //Scanner nextInt();
+
+      In addition, declare these variables:
+          price, room type
+
+      Use the information gathered to assign a room to the guests and print the information
+
+      Data:
+
+          people 1 | single room | price: number of days staying * 100
+          people 2 | double room | price: number of days staying * 125
+          people 3 or 4 | large room | price: number of days staying * number of people * 50
+          people 5 or 6 | suite | price: number of days staying * 1000
+
+          any other number of people is invalid and should output:
+              sorry $number_of_people is not a valid group size
