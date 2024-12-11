@@ -21,6 +21,7 @@ public class Hotel {
         String roomType = "";// In order to utilize these two variables adjust the code below to
 
         switch (numberOfPeople) {
+
             case 1 -> {
                 roomType = "| single room |";
                 price = numberOfDayStaying * 100;
@@ -36,7 +37,6 @@ public class Hotel {
             case 5, 6 -> {
                 roomType = "| suite |";
                 price = numberOfDayStaying * 1000;
-
             }
             default -> {
                 System.err.println("Sorry " + numberOfPeople + " is not a valid group size");
